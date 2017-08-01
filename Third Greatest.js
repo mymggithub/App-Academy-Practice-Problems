@@ -10,14 +10,14 @@ function third_greatest(nums) {
   third = null;
   for (var i = 0; i < nums.length; i++) {
     val = nums[i];
-    if (first == null || val > first) {
+    if (first === null || val > first) {
       third = second;
       second = first;
       first = val;
-    }else if (second == null || val > second) {
+    }else if (second === null || val > second) {
       third = second;
       second = val;
-    }else if (third == null || val > third) {
+    }else if (third === null || val > third) {
       third = val;
     }
   }

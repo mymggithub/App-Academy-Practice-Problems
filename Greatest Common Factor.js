@@ -12,7 +12,7 @@ function greatest_common_factor(number1, number2) {
     i = number2;
   }
   while (true){
-    if ((number1 % i == 0) && (number2 % i == 0)) {
+    if ((number1 % i === 0) && (number2 % i === 0)) {
       return i;
     }
     i--;

@@ -17,7 +17,7 @@ function most_common_letter(string) {
   			count++;
   		}
   	}
-  	if ( (most_comm_letter == null) || (count > most_comm_letter_i) ) {
+  	if ( (most_comm_letter === null) || (count > most_comm_letter_i) ) {
   		most_comm_letter = letter;
   		most_comm_letter_i = count;
   	}

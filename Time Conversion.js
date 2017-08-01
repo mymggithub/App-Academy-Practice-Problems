@@ -11,11 +11,11 @@ function time_conversion(minutes) {
 		minutes -= 60;
 	}
 	if (minutes < 10) {
-		minutes = "0" + minutes
+		minutes = "0" + minutes;
 	}else {
-		minutes = minutes
+		minutes = minutes;
 	}
-	return hrs + ":" + minutes
+	return hrs + ":" + minutes;
 }
 
 // These are tests to check that your code is working. After writing

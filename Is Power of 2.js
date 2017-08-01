@@ -14,7 +14,7 @@ function is_power_of_two(num) {
 	while (true) {
 		if (num == 1) {
 			return true;
-		}else if (num % 2 == 0) {
+		}else if (num % 2 === 0) {
 			num = num / 2;
 		}else {
 			return false;

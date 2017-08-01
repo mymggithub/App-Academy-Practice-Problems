@@ -23,7 +23,7 @@ function longest_palindrome(string) {
   for (var i = 0; i < string.length; i++) {
     for (var len = 1; i+len  <= string.length; len++) {
       substr = string.slice(i, i+len);
-      if ( is_palindrome(substr) && (likely_palindrome == null || substr.length > likely_palindrome.length) ) {
+      if ( is_palindrome(substr) && (likely_palindrome === null || substr.length > likely_palindrome.length) ) {
         likely_palindrome = substr;
       }
     }

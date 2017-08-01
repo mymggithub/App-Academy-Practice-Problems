@@ -12,10 +12,10 @@ function longest_word(sentence) {
   longest_word_result = null;
   for (var word_i = 0; word_i <= words.length - 1; word_i++) {
     current_word = words[word_i];
-    if (longest_word_result == null) {
-      longest_word_result = current_word
+    if (longest_word_result === null) {
+      longest_word_result = current_word;
     } else if (longest_word_result.length < current_word.length) {
-      longest_word_result = current_word
+      longest_word_result = current_word;
     }
   }
   return longest_word_result;
