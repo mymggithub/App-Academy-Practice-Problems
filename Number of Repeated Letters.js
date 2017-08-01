@@ -11,9 +11,7 @@ function num_repeats(string) {
 
 	for (var srt_i = 0; srt_i < string.length; srt_i++) {
 		letter = string[srt_i];
-		console.log("letter: "+letter);
 		for (var c_i = 0; c_i < counts.length; c_i++) {
-			console.log("counts[c_i]: "+counts[c_i]);
 			if (counts[c_i][0] == letter) {
 				counts[c_i][1] += 1;
 				break;
@@ -23,7 +21,6 @@ function num_repeats(string) {
 		if (c_i == counts.length) {
 			counts.push([letter, 1]);
 		}
-		console.log("counts: "+counts);
 	}
 
 	num_repeats_result = 0;
@@ -31,8 +28,6 @@ function num_repeats(string) {
 		if (counts[c_i][1] > 1) {
 			num_repeats_result++;
 		}
-		console.log("counts: "+counts);
-		console.log("num_repeats_result: "+num_repeats_result);
 	}
 	return num_repeats_result;
 }
