@@ -23,7 +23,7 @@ console.log("===============================================")
       (scramble_string("abcd", [3, 1, 2, 0]) == "dbca")
     )
     console.log(
-      'scramble_string("markov", [5, 3, 1, 4, 2, 0]) == "vkaorm"): ' +
+      'scramble_string("markov", [5, 3, 1, 4, 2, 0]) == "vkaorm": ' +
       (scramble_string("markov", [5, 3, 1, 4, 2, 0]) == "vkaorm")
     )
 console.log("===============================================")
